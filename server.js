@@ -29,5 +29,5 @@ app.get("/notes", (req, res) => res.sendFile(__dirname + "/Develop/public/notes.
 // return index.html after written
 app.get("*", (req, res) => res.sendFile(__dirname + "/Develop/public/index.html"));
 
-//listen tot he port when deployed
+//listen to the port when deployed
 app.listen(PORT, () => console.log("Server listening on port " + PORT));
